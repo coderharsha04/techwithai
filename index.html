@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Bike Zone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .bike {
+      background-color: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    .bike img {
+      max-width: 100%;
+      height: auto;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to TechWithAI smarty</h1>
+
+<header>
+  <h1>Welcome to Bike Zone</h1>
+  <p>Your one-stop shop for new and used bikes</p>
+</header>
+
+<nav>
+  <a href="#bikes">Bikes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="bikes">
+  <h2>Our Bikes</h2>
+
+  <div class="bike">
+    <h3>Yamaha FZ-S</h3>
+    <img src="https://via.placeholder.com/600x300?text=Yamaha+FZ-S" alt="Yamaha FZ-S">
+    <p>Price: ₹1,20,000</p>
+    <p>A stylish and powerful street bike for urban riders.</p>
+  </div>
+
+  <div class="bike">
+    <h3>Royal Enfield Classic 350</h3>
+    <img src="https://via.placeholder.com/600x300?text=Royal+Enfield+Classic+350" alt="RE Classic 350">
+    <p>Price: ₹1,90,000</p>
+    <p>Perfect for long rides with a touch of retro charm.</p>
+  </div>
+
+  <div class="bike">
+    <h3>Bajaj Pulsar 150</h3>
+    <img src="https://via.placeholder.com/600x300?text=Bajaj+Pulsar+150" alt="Pulsar 150">
+    <p>Price: ₹1,10,000</p>
+    <p>Reliable and fuel-efficient bike for daily commutes.</p>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Your Name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Your Email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+
+    <input type="submit" value="Send Message">
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Bike Zone. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
